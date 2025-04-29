@@ -25,6 +25,7 @@
   #show heading.where(level: 1): it => [
     #set align(center)
     #set text(weight: "bold")
+    #pagebreak()
     #block(spacing: 20pt)[
       #upper(it)
     ]
@@ -64,7 +65,15 @@
   #show figure.where(kind: table) : it => [
     #set align(left)
     #set text(size: 12pt)
-    Таблица #it.counter.display() --- #it.body
+    Таблица #it.counter.display() --- #it.caption.body
+  ]
+
+  // Table caption styling
+  #show figure.where(kind: raw) : it => [
+    #set align(center)
+    #set text(size: 12pt)
+    #it.body
+    Листинг #it.counter.display() --- #it.caption.body
   ]
 
   // Configure figure and table numbering
@@ -116,7 +125,9 @@
     stroke: 0.5pt,
     inset: 10pt,
     radius: 0pt,
-    [#grid(
+    // добавляет нумерацию строк
+    [ #set text(font: "JetBrains Mono")
+      #grid(
       columns: (1em, 1fr),
       align: (right, left),
       column-gutter: 0.7em,

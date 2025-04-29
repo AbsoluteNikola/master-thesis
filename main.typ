@@ -9,70 +9,10 @@
 #import "utils.typ": fix-par
 #show: settings
 
-= Введение
-#fix-par()
-#lorem(50)
-
-#lorem(50)
-
-#lorem(50)
-
-== Методология
-#fix-par()
-#lorem(60)
-
-== Методология
-#fix-par()
-#lorem(60)
-```typst
-#figure(
-  table(
-    columns: 7,
-    [*i*], [*j*], [*m*], [*n*], [*k*], [*p*], [*q*],
-    [1, 5, 6, 11]
-  ),
-  caption: [Мега таблица]
-)
-```
-
-=== Подраздел
-#fix-par()
-#lorem(45)
-
-#figure(
-  table(
-    columns: 7,
-    [*i*], [*j*], [*m*], [*n*], [*k*], [*p*], [*q*],
-    [1, 9, 11, 12, 15], [1, 3, 11, 12, 16], [1, 3, 10, 11], [1, 2, 3, 4, 11, 15], [3, 15], [1, 4, 5, 6, 11], [1, 5, 6, 11]
-  ),
-  caption: [Мега таблица]
-)
-
-#figure(
-  table(
-    columns: 7,
-    [*i*], [*j*], [*m*], [*n*], [*k*], [*p*], [*q*],
-    [1, 9, 11, 12, 15], [1, 3, 11, 12, 16], [1, 3, 10, 11], [1, 2, 3, 4, 11, 15], [3, 15], [1, 4, 5, 6, 11], [1, 5, 6, 11]
-  ),
-  caption: [Мега таблица]
-)
-
-==== Подраздел
-#fix-par()
-#lorem(45)
-
-// Lists example
-- Первый пункт списка
-- Второй пункт списка
-  - Вложенный пункт а
-  - Вложенный пункт б
-    1. Третий уровень списка
-
-1. Первый пункт списка
-2. Второй пункт списка
-  + Вложенный пункт а
-  + Вложенный пункт б
-    + Третий уровень списка
-    + Третий уровень списка
-
-#table([[1], [2], [3]])
+#include "parts/terminology.typ"
+#include "parts/intro.typ"
+#include "parts/lit_review.typ"
+#include "parts/design.typ"
+#include "parts/realization.typ"
+#include "parts/results.typ"
+#include "parts/conclusion.typ"
