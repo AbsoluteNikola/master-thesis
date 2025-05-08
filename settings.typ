@@ -16,7 +16,7 @@
 
   // Paragraph settings
   #set par(
-    first-line-indent: 1.25cm,
+    first-line-indent: (amount: 1.25cm, all: true),
     justify: true,
     leading: 1.5em,  // Equivalent to 1.5 line spacing
   )
