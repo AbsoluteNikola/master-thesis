@@ -119,6 +119,7 @@
 
   // Styling for code blocks
   #let style-code-line-number(number) = text(gray)[#number]
+  #set raw(theme: none,)
   #show raw.where(block: true): it => block(
     width: 100%,
     fill: white,

@@ -13,5 +13,6 @@
 #include "parts/lit_review.typ"
 #include "parts/design.typ"
 #include "parts/realization.typ"
+#include "parts/lang.typ"
 #include "parts/results.typ"
 #include "parts/conclusion.typ"
