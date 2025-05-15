@@ -157,9 +157,7 @@
     )
     #pagebreak(weak: true)
   ]
-  // Import the indenta package to fix first paragraph indentation
-  #import "@preview/indenta:0.0.3": fix-indent
-  #show: fix-indent()
+  #show selector(<nonumber>): set heading(numbering: none)
 
   #custom-toc()
   #doc

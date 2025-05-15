@@ -15,4 +15,3 @@
 #include "parts/realization.typ"
 #include "parts/lang.typ"
 #include "parts/results.typ"
-#include "parts/conclusion.typ"
